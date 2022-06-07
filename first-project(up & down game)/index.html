@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Up & Down Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="box">
+        <h1>Up & Down Game</h1>
+        <p id="result"></p>
+        <p id="chance">남은 기회 : 5</p>
+        <input
+          type="number"
+          placeholder="1~100까지의 숫자 입력"
+          name=""
+          id="user-number"
+        />
+        <div class="button">
+          <button type="button" id="send-user-number">GO</button>
+          <button type="button" id="game-reset">RESET</button>
+        </div>
+      </div>
+    </div>
+    <audio src="찌루루우우-잠깐의 환희.mp3" controls hidden id="success-sound"></audio>
+    <audio src="헉.mp3" controls hidden id ="fail-sound" ></audio>
+    <script src="main.js"></script>
+  </body>
+</html>
